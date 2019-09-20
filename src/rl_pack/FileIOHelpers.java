@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class FileIOHelpers {
     public static ArrayList<String> readAllLines(String filename) {
-        File file = new File("C:\\Users\\pankaj\\Desktop\\test.txt");
+        File file = new File(filename);
         ArrayList<String> output = new ArrayList<String>();
 
         try {
@@ -28,9 +28,10 @@ public class FileIOHelpers {
 
     public static ArrayList<ArrayList<String>> readCSV(String filename) {
         ArrayList<String> lines = readAllLines(filename);
+        if(lines == null) { return null; }
         ArrayList<ArrayList<String>> vals = new ArrayList<ArrayList<String>>();
         for(int i = 0; i < lines.size(); i++) {
-            vals.get(i).addAll((Arrays.asList(lines.get(i).split(","))));
+            vals.add(new ArrayList<String>(Arrays.asList(lines.get(i).split(","))));
         }
         return vals;
     }

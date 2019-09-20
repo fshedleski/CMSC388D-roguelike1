@@ -17,11 +17,18 @@ public class Main {
         gui.addKeyListener(hidHandler);
         //gameObject.addComponenet(new Player());
         ArrayList<ArrayList<String>> csvVals = FileIOHelpers.readCSV(FILENAME);
+        for(ArrayList<String> line : csvVals) {
+            for(String val : line) {
+                System.out.println(val);
+            }
+        }
 
+        /*
         // main loop, put update funcs in here
         while(true) {
             gameObject.update();
             try { TimeUnit.MILLISECONDS.sleep(1); } catch (InterruptedException e) {}
         }
+        */
     }
 }
