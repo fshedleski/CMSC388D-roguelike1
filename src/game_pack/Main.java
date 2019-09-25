@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static final String MAP_FILE = "C:\\Users\\Frank\\Google_Drive\\College\\Fall_2019\\CMSC_388D\\roguelike1\\map.txt";
+    public static final String MAP_FILE = "map.txt";
 
     public static MyGrid myGrid;
     public static int[][] paint;

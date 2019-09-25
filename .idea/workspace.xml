@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8f1fdec-7da5-405d-aa82-c5d9c7b2372d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/game_pack/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/map.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/Bullet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/Component.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/Enemy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/FileIOHelpers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/GameObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/HIDHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/MyGrid$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/MyGrid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/Obstacle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/moveable$Direction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roguelike1/rl_pack/moveable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/Bullet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/Enemy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/FileIOHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/FileIOHelpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/GameObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/HIDHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/HIDHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/MyGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/MyGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/Obstacle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/Painted_Grid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rl_pack/moveable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_pack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_pack/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game_pack/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state relative-caret-position="170">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,7 +132,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569433630921" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569433719077" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -401,8 +374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game_pack/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
