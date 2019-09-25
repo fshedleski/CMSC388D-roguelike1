@@ -1,9 +1,4 @@
-package rl_pack;
-
-// Franklin SHedleski
-// Dennis Dao
-// Mccauley Peters
-// Daniel Song
+package engine;
 
 import java.util.ArrayList;
 
@@ -47,8 +42,14 @@ public class GameObject {
         components.remove(_c);
         return true;
     }
-
-
+    public boolean removeComponent(int _id) {
+        for(Component c : components) {
+            if(c.id == _id) {
+                return components.remove(c);
+            }
+        }
+        return false;
+    }
 
     // update all components for the game object
     public void update() {

@@ -1,10 +1,12 @@
-package rl_pack;
+package engine;
 
 public abstract class Component implements Comparable<Component> {
     public int id; // used for priority
+    public GameObject parent;
 
-    protected Component(int _id) {
+    protected Component(int _id, GameObject _parent) {
         id = _id;
+        parent = _parent;
     }
 
     // checks rate control and updates object
