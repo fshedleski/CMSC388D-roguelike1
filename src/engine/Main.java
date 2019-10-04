@@ -1,7 +1,4 @@
-package game_pack;
-
-import engine.FileIOHelpers;
-import engine.MyGrid;
+package engine;
 
 import java.awt.*;
 import java.util.ArrayList;
