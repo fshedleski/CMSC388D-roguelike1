@@ -1,23 +1,23 @@
 package engine;
 
-public abstract class Component implements Comparable<Component> {
-    public int id; // used for priority
-    public GameObject parent;
+public class Component {
 
-    protected Component(int _id, GameObject _parent) {
-        id = _id;
+    public GameObject parent = null;
+    public boolean active = true;
+    public int Priority = 0;
+
+    public Component(GameObject _parent) {
         parent = _parent;
     }
 
     // logic update
-    public abstract void logic();
+    public void logic(){
+
+    }
 
     // graphic update
-    public abstract void graphic();
+    public void graphic(){
 
-    @Override
-    public int compareTo(Component c) {
-        return this.id - c.id;
     }
 
 }

@@ -9,6 +9,10 @@ public class Main {
 
     public static MyGrid myGrid;
     public static int[][] paint;
+    public static int MAXROW;
+    public static int MAXCOL;
+
+    public static HIDHandler hidHandler;
 
     public static void main(String Args[]) {
         // build grid
@@ -16,6 +20,11 @@ public class Main {
         int SIZE = csvVals.size();
         myGrid = new MyGrid(SIZE);
         paint = new int[SIZE][SIZE*2];
+        MAXROW = SIZE;
+        MAXCOL = 2*SIZE;
+
+        hidHandler = new HIDHandler();
+        myGrid.addKeyListener(hidHandler);
 
         // paint based on map file
         for(int r = 0; r < SIZE; r++) {
