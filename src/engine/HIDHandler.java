@@ -7,22 +7,10 @@ import java.util.ArrayList;
 // Human-Interface-Device (HID) Handler
 // currently only implements keyboard listening, in the future will implement mouse listening
 public class HIDHandler implements KeyListener {
-    private ArrayList<Integer> pressed;
+    public ArrayList<Integer> pressed;
 
     public HIDHandler() {
         pressed = new ArrayList<Integer>();
-    }
-
-    public boolean hasKeyBeenPressed() {
-        return !pressed.isEmpty();
-    }
-
-    public Integer getPressedKey() {
-        if(!pressed.isEmpty()) {
-            return pressed.remove(0);
-        } else {
-            return null;
-        }
     }
 
     @Override
@@ -39,6 +27,6 @@ public class HIDHandler implements KeyListener {
     // activated on key-up
     @Override
     public void keyReleased(KeyEvent e) {
-        pressed.remove((Object)e.getKeyCode());
+        pressed.remove((Integer)e.getKeyCode());
     }
 }

@@ -51,10 +51,17 @@ public class GameObject {
         return false;
     }
 
-    // update all components for the game object
-    public void update() {
+    // logic update
+    public void logic() {
         for (Component c : components) {
-            c.update();
+            c.logic();
+        }
+    }
+
+    // graphic update
+    public void graphic() {
+        for(Component c : components) {
+            c.graphic();
         }
     }
 

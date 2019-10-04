@@ -9,8 +9,11 @@ public abstract class Component implements Comparable<Component> {
         parent = _parent;
     }
 
-    // checks rate control and updates object
-    public abstract void update ();
+    // logic update
+    public abstract void logic();
+
+    // graphic update
+    public abstract void graphic();
 
     @Override
     public int compareTo(Component c) {

@@ -19,6 +19,7 @@ public class Main {
         int SIZE = csvVals.size();
         myGrid = new MyGrid(SIZE);
         paint = new int[SIZE][SIZE*2];
+
         // paint based on map file
         for(int r = 0; r < SIZE; r++) {
             for(int c = 0; c < SIZE*2; c++) {
@@ -39,5 +40,8 @@ public class Main {
                 }
             }
         }
+
+
+
     }
 }
