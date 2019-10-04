@@ -83,7 +83,7 @@ public class PlayerComponent extends Component {
 
     @Override
     // player visualization logic
-    public void graphic() {
+    public void graphics() {
 
     }
 }

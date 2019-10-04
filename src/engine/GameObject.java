@@ -47,7 +47,7 @@ public class GameObject {
     // graphic update
     public void graphics() {
         for(Component c : Gcomponents) {
-            c.graphic();
+            c.graphics();
         }
     }
 

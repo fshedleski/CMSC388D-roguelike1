@@ -16,7 +16,7 @@ public class Component {
     }
 
     // graphic update
-    public void graphic(){
+    public void graphics(){
 
     }
 
