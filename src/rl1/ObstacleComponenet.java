@@ -1,24 +1,24 @@
-package game_pack;
+package rl1;
 
 import engine.Component;
 import engine.GameObject;
+import engine.Main;
+
+import java.awt.*;
 
 public class ObstacleComponenet extends Component {
-    int row, col;
 
     public ObstacleComponenet(GameObject _parent) {
         super(_parent);
-        row = parent.row;
-        col = parent.col;
     }
 
     @Override
     public void logic() {
-        // TODO check collision system
+        // don't need to check collisions here because everything moving should be handling their own collisions
     }
 
     @Override
     public void graphics() {
-
+        Main.myGrid.setColor(parent.row, parent.col, Color.GREEN);
     }
 }
