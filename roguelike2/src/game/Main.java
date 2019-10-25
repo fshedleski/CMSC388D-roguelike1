@@ -11,16 +11,14 @@ public class Main {
 
     public static void main(String args[]) {
         // make background object
-        GameObject background = new GameObject();
+        GameObject background = new GameObject(core);
         BackgroundGComp bgGComp = new BackgroundGComp(background);
         background.addGraphicsComponent(bgGComp);
-        //core.AddObject(background);
 
         // make player
-        GameObject player = new GameObject();
+        GameObject player = new GameObject(core, 683, 389);
         PlayerComponent playerComp = new PlayerComponent(player);
         player.addComponent(playerComp);
-        core.AddObject(player);
 
         // run
         core.start();

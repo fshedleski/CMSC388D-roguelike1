@@ -8,23 +8,28 @@ import java.util.ArrayList;
 public class GameObject {
     private ArrayList<Component> Gcomponents;
     private ArrayList<Component> Lcomponents;
-    private ArrayList<GameObject> gameObjectsPtr;
-
+    public EngineCore corePtr;
     public AffineTransform af;
 
-    public GameObject() {
+    public GameObject(EngineCore _core) {
         Gcomponents = new ArrayList<Component>();
         Lcomponents = new ArrayList<Component>();
         af = new AffineTransform();
         af.setToIdentity();
-        af.translate(0,0);
+        af.setToTranslation(0,0);
+        corePtr = _core;
+        corePtr.AddObject(this);
     }
 
     // constructor that indicates a start position for game object
-    public GameObject(int _x, int _y) {
+    public GameObject(EngineCore _core, int _x, int _y) {
         Gcomponents = new ArrayList<Component>();
         Lcomponents = new ArrayList<Component>();
-        af.translate(_x, _y);
+        af = new AffineTransform();
+        af.setToIdentity();
+        af.setToTranslation(_x, _y);
+        corePtr = _core;
+        corePtr.AddObject(this);
     }
 
     // add a component to logic and graphics
