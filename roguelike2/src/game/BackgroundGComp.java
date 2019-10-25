@@ -18,11 +18,6 @@ public class BackgroundGComp extends engine.Component {
     }
 
     @Override
-    public void logic() {
-
-    }
-
-    @Override
     public void graphics(Graphics2D g) {
         try {
             Image im = EngineCore.assetsCenter.getImage(assetsBackGroundImg,0);
