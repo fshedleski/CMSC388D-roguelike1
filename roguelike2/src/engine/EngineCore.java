@@ -34,7 +34,6 @@ public class EngineCore extends Canvas implements Runnable  {
 	public static int runSpeed = 60;
 	public static AssetsCenter assetsCenter;
 	public static HIDHandler inputs;
-	//public static CollisionHandler collisionHandler1;
 
 	public EngineCore(int Size, double Ratio, int Scale, String Name, String path){
 		
@@ -134,7 +133,6 @@ public class EngineCore extends Canvas implements Runnable  {
 			
 			//resets
 			inputs.UpdatePending();
-			//if(collisionHandler1 != null) {collisionHandler1.clearCollisionPairs();}
 		}
 		
 		

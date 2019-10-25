@@ -1,29 +1,20 @@
 package game;
 
-import engine.CollisionHandler;
 import engine.Component;
-import engine.EngineCore;
 import engine.GameObject;
 
-import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.geom.AffineTransform;
-import java.util.ArrayList;
 
-public class PlayerComponent extends Component {
+public class PlayerLComponent extends Component {
 
     public Direction dir;
-    private static String assetsPlayerSheet = "boiS.png";
-    AffineTransform afBody;
     public int MAXX, MAXY;
     public final int SPEED = 4;
 
-    public PlayerComponent(GameObject _parent) {
+    public PlayerLComponent(GameObject _parent) {
         super(_parent);
         dir = Direction.Up;
-        afBody = new AffineTransform();
-        afBody.setToIdentity();
-        afBody.scale(1, 1);
         MAXX = 1366 - 56;
         MAXY = 768 - 68;
     }
@@ -48,22 +39,6 @@ public class PlayerComponent extends Component {
                 this.dir = Direction.Right;
                 this.move();
             }
-
-            // Check collision state
-            /*parent.getLogicComponent(CollisionHandler.CollisionHandlerComponent.class).logic();
-            if(Main.collisionHandler1.containsCollisionWith(parent)) {
-                parent.row = prevRow;
-                parent.col = prevCol;
-            }
-
-            if (engine.EngineCore.inputs.pending.contains(KeyEvent.VK_SPACE)) {
-                GameObject bullet = new GameObject(parent.row, parent.col);
-                BulletComponent bulletComponent = new BulletComponent(bullet, dir);
-                bullet.addComponent(bulletComponent);
-                bullet.addLogicComponent(Main.collisionHandler1.newCollisionHandlerComponent(bullet));
-            }*/
-
-
         }
     }
 
@@ -100,21 +75,6 @@ public class PlayerComponent extends Component {
                     parent.af.translate(SPEED,0);
                 }
                 break;
-        }
-    }
-
-    @Override
-    // player visualization logic
-    public void graphics(Graphics2D g) {
-        try {
-            Image im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,19);
-            afBody.setToTranslation(parent.af.getTranslateX()+11, parent.af.getTranslateY()+42);
-            ((Graphics2D) g).drawImage(im, afBody, null);
-            im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,5);
-            ((Graphics2D) g).drawImage(im, parent.af, null);
-        } catch (engine.ResourceNotFound e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         }
     }
 }
