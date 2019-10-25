@@ -15,8 +15,12 @@ public class PlayerComponent extends Component {
     public int prevRow, prevCol;
     public Direction dir;
     private static String assetsPlayerSheet = "boiS.png";
+    private static String path = new String("Assets\\");
     AffineTransform afBody;
     public int MAXX, MAXY;
+    ArrayList<BufferedImage> al = new ArrayList<BufferedImage>();
+    private int animateCounter = 0;
+    
 
     public PlayerComponent(GameObject _parent) {
         super(_parent);
@@ -26,25 +30,42 @@ public class PlayerComponent extends Component {
         afBody.scale(1, 1);
         MAXX = 1366 - 56;
         MAXY = 768 - 91;
+        AssetsCenter center = new AssetsCenter(path);
+        ArrayList<BufferedImage> ay = center.getImageList(assetsPlayerSheet);
     }
 
     @Override
     // player movement logic
     public void logic() {
         if(engine.EngineCore.LCount % 2 == 0) { // only update player every other frame
+        	if(animateCounter < 8) {
+        		animateCounter++;
+        	}else {
+        		animateCounter = 0;
+        	}
+        
+        
             if (engine.EngineCore.inputs.pending.contains(KeyEvent.VK_W)) {
+            	if(this.dir != Direction.Up){animateCounter = 0;}
+            
                 this.dir = Direction.Up;
                 this.move();
             }
             if (engine.EngineCore.inputs.pending.contains(KeyEvent.VK_S)) {
+            	if(this.dir != Direction.Down){animateCounter = 0;}
+            
                 this.dir = Direction.Down;
                 this.move();
             }
             if (engine.EngineCore.inputs.pending.contains(KeyEvent.VK_A)) {
+            	if(this.dir != Direction.Left){animateCounter = 0;}
+            
                 this.dir = Direction.Left;
                 this.move();
             }
             if (engine.EngineCore.inputs.pending.contains(KeyEvent.VK_D)) {
+            	if(this.dir != Direction.Left){animateCounter = 0;}
+            
                 this.dir = Direction.Right;
                 this.move();
             }
@@ -107,11 +128,41 @@ public class PlayerComponent extends Component {
     // player visualization logic
     public void graphics(Graphics2D g) {
         try {
-            Image im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,19);
-            afBody.translate(parent.af.getTranslateX()+10, parent.af.getTranslateY()+52);
-            ((Graphics2D) g).drawImage(im, afBody, null);
-            im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,5);
-            ((Graphics2D) g).drawImage(im, parent.af, null);
+        	switch(this.dir) {
+            case Up:
+            	im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,4);
+                ((Graphics2D) g).drawImage(im, parent.af, null);
+                
+            	Image im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,8 + arrayCounter);
+                afBody.translate(parent.af.getTranslateX()+10, parent.af.getTranslateY()+42);
+                ((Graphics2D) g).drawImage(im, afBody, null);
+                
+            case Down:
+            	im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,0);
+                ((Graphics2D) g).drawImage(im, parent.af, null);
+            	
+            	Image im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,8 + arrayCounter);
+                afBody.translate(parent.af.getTranslateX()+10, parent.af.getTranslateY()+42);
+                ((Graphics2D) g).drawImage(im, afBody, null);
+                
+            case Left:
+            	im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,6);
+                ((Graphics2D) g).drawImage(im, parent.af, null);
+            	
+            	Image im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,28 + arrayCounter);
+                afBody.translate(parent.af.getTranslateX()+10, parent.af.getTranslateY()+42);
+                ((Graphics2D) g).drawImage(im, afBody, null);
+                
+            case Right:
+                im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,2);
+                ((Graphics2D) g).drawImage(im, parent.af, null);
+            	
+            	Image im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,18 + arrayCounter);
+                afBody.translate(parent.af.getTranslateX()+10, parent.af.getTranslateY()+42);
+                ((Graphics2D) g).drawImage(im, afBody, null);
+                break;
+        	
+            
         } catch (engine.ResourceNotFound e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
