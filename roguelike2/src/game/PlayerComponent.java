@@ -12,11 +12,11 @@ import java.util.ArrayList;
 
 public class PlayerComponent extends Component {
 
-    public int prevRow, prevCol;
     public Direction dir;
     private static String assetsPlayerSheet = "boiS.png";
     AffineTransform afBody;
     public int MAXX, MAXY;
+    public final int SPEED = 4;
 
     public PlayerComponent(GameObject _parent) {
         super(_parent);
@@ -25,7 +25,7 @@ public class PlayerComponent extends Component {
         afBody.setToIdentity();
         afBody.scale(1, 1);
         MAXX = 1366 - 56;
-        MAXY = 768 - 91;
+        MAXY = 768 - 68;
     }
 
     @Override
@@ -73,31 +73,31 @@ public class PlayerComponent extends Component {
     private void move(Direction _dir) {
         switch(_dir) {
             case Up:
-                if(parent.af.getTranslateY() - 1 < 0) {
-                    parent.af.setToTranslation(MAXY - 1,parent.af.getTranslateY());
+                if(parent.af.getTranslateY() - SPEED < 0) {
+                    parent.af.setToTranslation(parent.af.getTranslateX(), MAXY-1);
                 } else {
-                    parent.af.translate(0,-1);
+                    parent.af.translate(0,-SPEED);
                 }
                 break;
             case Down:
-                if(parent.af.getTranslateY() + 1 >= MAXY) {
-                    parent.af.setToTranslation(0,parent.af.getTranslateY());
+                if(parent.af.getTranslateY() + SPEED >= MAXY) {
+                    parent.af.setToTranslation(parent.af.getTranslateX(),0);
                 } else {
-                    parent.af.translate(0,1);
+                    parent.af.translate(0,SPEED);
                 }
                 break;
             case Left:
-                if(parent.af.getTranslateX() - 1 < 0) {
-                    parent.af.setToTranslation(MAXX - 1,parent.af.getTranslateY());
+                if(parent.af.getTranslateX() - SPEED < 0) {
+                    parent.af.setToTranslation(MAXX-1, parent.af.getTranslateY());
                 } else {
-                    parent.af.translate(-1,0);
+                    parent.af.translate(-SPEED,0);
                 }
                 break;
             case Right:
-                if(parent.af.getTranslateX() + 1 >= MAXX) {
-                    parent.af.setToTranslation(0,parent.af.getTranslateY());
+                if(parent.af.getTranslateX() + SPEED >= MAXX) {
+                    parent.af.setToTranslation(0, parent.af.getTranslateY());
                 } else {
-                    parent.af.translate(1,0);
+                    parent.af.translate(SPEED,0);
                 }
                 break;
         }
@@ -108,7 +108,7 @@ public class PlayerComponent extends Component {
     public void graphics(Graphics2D g) {
         try {
             Image im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,19);
-            afBody.translate(parent.af.getTranslateX()+10, parent.af.getTranslateY()+52);
+            afBody.setToTranslation(parent.af.getTranslateX()+11, parent.af.getTranslateY()+42);
             ((Graphics2D) g).drawImage(im, afBody, null);
             im = EngineCore.assetsCenter.getImage(assetsPlayerSheet,5);
             ((Graphics2D) g).drawImage(im, parent.af, null);
