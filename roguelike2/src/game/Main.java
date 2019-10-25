@@ -17,8 +17,10 @@ public class Main {
 
         // make player
         GameObject player = new GameObject(core, 683, 389);
-        PlayerComponent playerComp = new PlayerComponent(player);
-        player.addComponent(playerComp);
+        PlayerGComponent playerGComp = new PlayerGComponent(player);
+        player.addComponent(playerGComp);
+        PlayerLComponent playerLComp = new PlayerLComponent(player);
+        player.addComponent(playerLComp);
 
         // run
         core.start();
