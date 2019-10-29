@@ -13,14 +13,17 @@ public class Main {
         // make background object
         GameObject background = new GameObject(core);
         BackgroundGComp bgGComp = new BackgroundGComp(background);
+        bgGComp.Priority = 0;
         background.addGraphicsComponent(bgGComp);
 
         // make player
         GameObject player = new GameObject(core, 683, 389);
         PlayerGComponent playerGComp = new PlayerGComponent(player);
-        player.addComponent(playerGComp);
+        playerGComp.Priority = 2;
+        player.addGraphicsComponent(playerGComp);
         PlayerLComponent playerLComp = new PlayerLComponent(player);
-        player.addComponent(playerLComp);
+        playerLComp.Priority = 2;
+        player.addLogicComponent(playerLComp);
 
         // run
         core.start();

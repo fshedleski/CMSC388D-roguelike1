@@ -6,6 +6,9 @@ import java.util.ArrayList;
 
 // base game object that everything inherits from
 public class GameObject {
+    static int Min;
+    static int Max;
+
     private ArrayList<Component> Gcomponents;
     private ArrayList<Component> Lcomponents;
     public EngineCore corePtr;
@@ -36,37 +39,56 @@ public class GameObject {
     // (its normally better to use add graphics and add logic functions)
     public boolean addComponent(Component _c) {
         if(Gcomponents.contains(_c) && Lcomponents.contains(_c)) {
-            // TODO maybe update component properties here like isActive and Priority?
             return false;
         } else {
             if(!Gcomponents.contains(_c)) {
                 Gcomponents.add(_c);
-            } // TODO else maybe update component properties here like isActive and Priority?
+                if(_c.Priority < Min) {
+                    Min = _c.Priority;
+                } else if(_c.Priority > Max) {
+                    Max = _c.Priority;
+                }
+            }
             if(!Lcomponents.contains(_c)) {
                 Lcomponents.add(_c);
-            } // TODO else maybe update component properties here like isActive and Priority?
+                if(_c.Priority < Min) {
+                    Min = _c.Priority;
+                } else if(_c.Priority > Max) {
+                    Max = _c.Priority;
+                }
+            }
             return true;
         }
     }
 
     // add a graphics component that will update in graphics()
-    public boolean addGraphicsComponent(Component _class) {
-        if(Gcomponents.contains(_class)) {
+    public boolean addGraphicsComponent(Component _c) {
+        if(Gcomponents.contains(_c)) {
             // TODO maybe update component properties here like isActive and Priority?
             return false;
         } else {
-            Gcomponents.add(_class);
+            Gcomponents.add(_c);
+            if(_c.Priority < Min) {
+                Min = _c.Priority;
+            } else if(_c.Priority > Max) {
+                Max = _c.Priority;
+            }
             return true;
         }
     }
 
     // add a logic component that will update in logic()
-    public boolean addLogicComponent(Component _class) {
-        if(Lcomponents.contains(_class)) {
+    public boolean addLogicComponent(Component _c) {
+        if(Lcomponents.contains(_c)) {
             // TODO maybe update component properties here like isActive and Priority?
             return false;
         } else {
-            Lcomponents.add(_class);
+            Lcomponents.add(_c);
+            if(_c.Priority < Min) {
+                Min = _c.Priority;
+            } else if(_c.Priority > Max) {
+                Max = _c.Priority;
+            }
             return true;
         }
     }
@@ -160,23 +182,19 @@ public class GameObject {
     }
 
     // logic update
-    public void logic() {
-        for(int priority = 0; priority <= calcMaxComponentPriority(); priority++) {
-            for (Component c : Lcomponents) {
-                if(c.active && c.Priority == priority) {
-                    c.logic();
-                }
+    public void logic(int priority) {
+        for (Component c : Lcomponents) {
+            if(c.active && c.Priority == priority) {
+                c.logic();
             }
         }
     }
 
     // graphic update
-    public void graphics(Graphics2D g) {
-        for(int priority = 0; priority <= calcMaxComponentPriority(); priority++) {
-            for (Component c : Gcomponents) {
-                if (c.active && c.Priority == priority) {
-                    c.graphics(g);
-                }
+    public void graphics(int priority, Graphics2D g) {
+        for (Component c : Gcomponents) {
+            if (c.active && c.Priority == priority) {
+                c.graphics(g);
             }
         }
     }

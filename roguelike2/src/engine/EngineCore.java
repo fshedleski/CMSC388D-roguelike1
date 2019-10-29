@@ -139,8 +139,11 @@ public class EngineCore extends Canvas implements Runnable  {
 	}
 	
 	public void logic() {
-		for(GameObject j: tempElements)
-			j.logic();
+		for(int i = GameObject.Min; i <= GameObject.Max; i++) {
+			for (GameObject j : tempElements) {
+				j.logic(i);
+			}
+		}
 	}
 	
 	
@@ -162,9 +165,11 @@ public class EngineCore extends Canvas implements Runnable  {
 		//G.fillRect(0, 0, Width*Scale, Height*Scale);
 		
 		//calling the graphic methods of every element
-		for(GameObject j: tempElements)
-			j.graphics(G);;
-		
+		for(int i = GameObject.Min; i <= GameObject.Max; i++) {
+			for (GameObject j : tempElements) {
+				j.graphics(i, G);
+			}
+		}
 		
 		G.dispose();
 		bs.show();
