@@ -11,6 +11,10 @@ public abstract class Component {
     public Component(GameObject _parent) {
         parent = _parent;
     }
+    public Component(GameObject _parent, int _Priority) {
+        parent = _parent;
+        Priority = _Priority;
+    }
 
     // logic update
     public void logic() {}

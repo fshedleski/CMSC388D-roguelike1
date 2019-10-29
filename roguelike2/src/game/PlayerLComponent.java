@@ -4,17 +4,18 @@ import engine.Component;
 import engine.GameObject;
 
 import java.awt.event.KeyEvent;
-import java.awt.geom.AffineTransform;
 
 public class PlayerLComponent extends Component {
 
     public Direction dir;
     public int MAXX, MAXY;
     public final int SPEED = 4;
+    private int shootDelay = 0;
+    private boolean shootEye = false;
 
     public PlayerLComponent(GameObject _parent) {
         super(_parent);
-        dir = Direction.Up;
+        dir = Direction.Down;
         MAXX = 1366 - 56;
         MAXY = 768 - 68;
     }
@@ -39,6 +40,34 @@ public class PlayerLComponent extends Component {
                 this.dir = Direction.Right;
                 this.move();
             }
+            if (engine.EngineCore.inputs.pending.contains(KeyEvent.VK_SPACE) && shootDelay == 0) {
+                GameObject bullet;
+                if(dir == Direction.Left || dir == Direction.Right) {
+                    bullet = new GameObject(parent.corePtr, (int)parent.af.getTranslateX(), (int)parent.af.getTranslateY()+15);
+                } else {
+                    if(shootEye) {
+                        bullet = new GameObject(parent.corePtr, (int)parent.af.getTranslateX()+2, (int)parent.af.getTranslateY()+8);
+                    } else {
+                        bullet = new GameObject(parent.corePtr, (int)parent.af.getTranslateX()+30, (int)parent.af.getTranslateY()+8);
+                    }
+                    shootEye = !shootEye;
+                }
+                BulletLComponent bulletLComponent = new BulletLComponent(bullet, dir);
+                BulletGComponent bulletGComponent = new BulletGComponent(bullet, dir);
+                if(dir == Direction.Left || dir == Direction.Right || dir == Direction.Down) {
+                    bulletLComponent.Priority = 3;
+                    bulletGComponent.Priority = 3;
+                } else {
+                    bulletLComponent.Priority = 1;
+                    bulletGComponent.Priority = 1;
+                }
+                bullet.addLogicComponent(bulletLComponent);
+                bullet.addGraphicsComponent(bulletGComponent);
+                shootDelay = 15;
+            }
+        }
+        if(shootDelay > 0) {
+            shootDelay--;
         }
     }
 
