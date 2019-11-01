@@ -28,7 +28,6 @@ public class PlayerGComponent extends Component {
     // player visualization logic
     public void graphics(Graphics2D g) {
         boolean isMoving = false;
-        boolean animateHead = false;
 
         if (engine.EngineCore.inputs.pending.contains(KeyEvent.VK_W)) {
             dir = Direction.Up;
@@ -46,9 +45,6 @@ public class PlayerGComponent extends Component {
             dir = Direction.Right;
             isMoving = true;
         }
-        if (engine.EngineCore.inputs.pending.contains(KeyEvent.VK_SPACE)) {
-            animateHead = true;
-        }
 
         if (animateCounter <= 9 && isMoving && EngineCore.FCount % 10 == 0) {
             animateCounter = (animateCounter + 1) % 10;
@@ -61,53 +57,24 @@ public class PlayerGComponent extends Component {
                     im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, 8 + animateCounter);
                     afBody.setToTranslation(parent.af.getTranslateX() + 10, parent.af.getTranslateY() + 42);
                     ((Graphics2D) g).drawImage(im, afBody, null);
-                    if(animateHead) {
-                        headIdx = 4;
-                        im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, 5);
-                        ((Graphics2D) g).drawImage(im, parent.af, null);
-                    } else {
-                        im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, headIdx);
-                        ((Graphics2D) g).drawImage(im, parent.af, null);
-                    }
                     break;
                 case Down:
                     im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, 8 + animateCounter);
                     afBody.setToTranslation(parent.af.getTranslateX() + 10, parent.af.getTranslateY() + 42);
                     ((Graphics2D) g).drawImage(im, afBody, null);
-                    if(animateHead) {
-                        headIdx = 0;
-                        im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, 1);
-                        ((Graphics2D) g).drawImage(im, parent.af, null);
-                    } else {
-                        im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, headIdx);
-                        ((Graphics2D) g).drawImage(im, parent.af, null);
-                    }
+
                     break;
                 case Left:
                     im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, 28 + animateCounter);
                     afBody.setToTranslation(parent.af.getTranslateX() + 10, parent.af.getTranslateY() + 42);
                     ((Graphics2D) g).drawImage(im, afBody, null);
-                    if(animateHead) {
-                        headIdx = 6;
-                        im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, 7);
-                        ((Graphics2D) g).drawImage(im, parent.af, null);
-                    } else {
-                        im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, headIdx);
-                        ((Graphics2D) g).drawImage(im, parent.af, null);
-                    }
+
                     break;
                 case Right:
                     im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, 18 + animateCounter);
                     afBody.setToTranslation(parent.af.getTranslateX() + 10, parent.af.getTranslateY() + 42);
                     ((Graphics2D) g).drawImage(im, afBody, null);
-                    if(animateHead) {
-                        headIdx = 2;
-                        im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, 3);
-                        ((Graphics2D) g).drawImage(im, parent.af, null);
-                    } else {
-                        im = EngineCore.assetsCenter.getImage(assetsPlayerSheet, headIdx);
-                        ((Graphics2D) g).drawImage(im, parent.af, null);
-                    }
+
                     break;
 
             }
