@@ -2,33 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3a5f67a-684d-4c37-97df-3d34c0388840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/AssetsCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/EngineCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/GameObject25D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/GameObject2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/HIDHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/ResourceNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Vector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/CubeLineComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/engine/AssetsCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/engine/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/engine/EngineCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/engine/GameObject25D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/engine/GameObject2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/engine/HIDHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/engine/ResourceNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/engine/Vector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/game/CubeComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/game/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/game/SolidBackgroundGComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workshop9/src/game/WallLComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/assets/boiS.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/assets/boiS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/assets/empt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/final_camera_trans.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/AssetsCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/EngineCore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/GameObject25D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/GameObject2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/HIDHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/MoveComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/ResourceNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/RotateComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/engine/Vector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/game/BackgroundGComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/game/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/game/PlayerBodyGComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_camera_trans/src/game/PlayerHeadGComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FinalProjectBase/src/engine/Vector.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../roguelike2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/META-INF (1)/roguelike2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/AssetsCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionHandlerComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/EngineCore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/GameObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/HIDHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/ResourceNotFound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BackgroundGComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunLComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workshop10/game/CubeLineComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop10/game/CubeLineComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/CubeLineComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CubeLineComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workshop9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workshop9/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,12 +67,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+            <state relative-caret-position="85">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -51,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/CubeLineComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+            <state relative-caret-position="320">
+              <caret line="60" column="117" selection-start-line="60" selection-start-column="117" selection-end-line="60" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -95,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -112,18 +142,23 @@
               <item name="workshop10" type="b2602c69:ProjectViewProjectNode" />
               <item name="workshop10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workshop10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workshop10" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574452659680" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575665891691" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CMSC_388D_copy/final_audio" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -182,34 +217,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32917964" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -228,12 +262,8 @@
     <entry file="file://$PROJECT_DIR$/src/engine/GameObject2D.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/WallLComponent.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/SolidBackgroundGComp.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/WallLComponent.java" />
+    <entry file="file://$PROJECT_DIR$/src/game/SolidBackgroundGComp.java" />
     <entry file="file://$PROJECT_DIR$/src/engine/GameObject25D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -255,31 +285,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/CubeComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/PlayerLComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/CubeComponent.java" />
+    <entry file="file://$PROJECT_DIR$/src/game/PlayerLComponent.java" />
     <entry file="file://$PROJECT_DIR$/src/game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+        <state relative-caret-position="85">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/CubeLineComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        <state relative-caret-position="320">
+          <caret line="60" column="117" selection-start-line="60" selection-start-column="117" selection-end-line="60" selection-end-column="117" />
         </state>
       </provider>
     </entry>
