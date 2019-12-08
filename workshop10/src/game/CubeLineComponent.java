@@ -53,14 +53,14 @@ public class CubeLineComponent extends Component {
 
     @Override
     public void graphics(Graphics2D g) {
-        double p000[] = project(((GameObject25D)parent).x, ((GameObject25D)parent).y, ((GameObject25D)parent).z, d);
-        double p100[] = project(((GameObject25D)parent).x+s, ((GameObject25D)parent).y, ((GameObject25D)parent).z, d);
-        double p010[] = project(((GameObject25D)parent).x, ((GameObject25D)parent).y+s, ((GameObject25D)parent).z, d);
-        double p110[] = project(((GameObject25D)parent).x+s, ((GameObject25D)parent).y+s, ((GameObject25D)parent).z, d);
-        double p001[] = project(((GameObject25D)parent).x, ((GameObject25D)parent).y, ((GameObject25D)parent).z+s, d);
-        double p101[] = project(((GameObject25D)parent).x+s, ((GameObject25D)parent).y, ((GameObject25D)parent).z+s, d);
-        double p011[] = project(((GameObject25D)parent).x, ((GameObject25D)parent).y+s, ((GameObject25D)parent).z+s, d);
-        double p111[] = project(((GameObject25D)parent).x+s, ((GameObject25D)parent).y+s, ((GameObject25D)parent).z+s, d);
+        double p000[] = proj(((GameObject25D)parent).x, ((GameObject25D)parent).y, ((GameObject25D)parent).z, d);
+        double p100[] = proj(((GameObject25D)parent).x+s, ((GameObject25D)parent).y, ((GameObject25D)parent).z, d);
+        double p010[] = proj(((GameObject25D)parent).x, ((GameObject25D)parent).y+s, ((GameObject25D)parent).z, d);
+        double p110[] = proj(((GameObject25D)parent).x+s, ((GameObject25D)parent).y+s, ((GameObject25D)parent).z, d);
+        double p001[] = proj(((GameObject25D)parent).x, ((GameObject25D)parent).y, ((GameObject25D)parent).z+s, d);
+        double p101[] = proj(((GameObject25D)parent).x+s, ((GameObject25D)parent).y, ((GameObject25D)parent).z+s, d);
+        double p011[] = proj(((GameObject25D)parent).x, ((GameObject25D)parent).y+s, ((GameObject25D)parent).z+s, d);
+        double p111[] = proj(((GameObject25D)parent).x+s, ((GameObject25D)parent).y+s, ((GameObject25D)parent).z+s, d);
         g.setColor(Color.BLUE);
         drawLineAux(g, p000, p100);
         drawLineAux(g, p000, p001);
@@ -74,10 +74,9 @@ public class CubeLineComponent extends Component {
         drawLineAux(g, p011, p111);
         drawLineAux(g, p011, p001);
         drawLineAux(g, p011, p010);
-
     }
 
-    private double[] project(double x, double y, double z, double d) {
+    private double[] proj(double x, double y, double z, double d) {
         double[] ret = new double[2];
         ret[0] = x/(1-z/d);
         ret[1] = y/(1-z/d);
