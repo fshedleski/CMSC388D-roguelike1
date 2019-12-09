@@ -70,7 +70,7 @@ public class AnimationComp extends Component {
         changes.add(c);
     }
 
-    //if boool = true then when no input, snaps back to nodes[0] otherwise it doesnt
+    //if bool = true then when no input, snaps back to nodes[0] otherwise it doesnt
     public void whenNotMoving(boolean bool){
         moving = bool;
     }
@@ -93,12 +93,14 @@ public class AnimationComp extends Component {
         translateY = y;
     }
 
+
     @Override
     // player visualization logic
     public void graphics(Graphics2D g) {
         boolean isMoving = false;
         for(int a = 0; a < changes.size() - 1; a ++){
-            if(EngineCore.inputs.pending.contains(changes.get(a))){
+            //changes in EngineCore at bottom allow for other inputs besides keypresses
+            if(EngineCore.animationInputs.contains(changes.get(a))){
                 changer = changes.get(a);
                 isMoving = true;
             }
@@ -117,10 +119,14 @@ public class AnimationComp extends Component {
             animateCounter = 0;
         }
 
+
         if (animateCounter <= current.images.size() && isMoving && EngineCore.FCount % current.frame == 0) {
             animateCounter = (animateCounter + 1) % current.images.size();
         }
 
+        if(animateCounter >= current.images.size()){
+            animateCounter = 0;
+        }
 
         Image im;
         im = current.images.get(animateCounter);

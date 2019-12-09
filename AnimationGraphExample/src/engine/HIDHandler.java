@@ -30,6 +30,7 @@ public class HIDHandler implements KeyListener {
         }
 
         pending = temp;
+
     }
 
     @Override
