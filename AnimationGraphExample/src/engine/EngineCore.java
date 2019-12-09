@@ -35,6 +35,8 @@ public class EngineCore extends Canvas implements Runnable  {
 	public static AssetsCenter assetsCenter;
 	public static HIDHandler inputs;
 
+	public static ArrayList<Integer> animationInputs;
+
 	public EngineCore(int Size, double Ratio, int Scale, String Name, String path){
 		
 		
@@ -51,7 +53,8 @@ public class EngineCore extends Canvas implements Runnable  {
 		inputs =new HIDHandler(Frame);
 		assetsCenter = new AssetsCenter(this.path);
 		elements = new ArrayList<GameObject>();
-		
+
+		animationInputs = new ArrayList<Integer>();
 		
 		// Hard-coding the sky-box (not the best thing to do)
 		this.BackGround = new BufferedImage (this.Width,this.Height,BufferedImage.TYPE_INT_RGB);
@@ -133,6 +136,16 @@ public class EngineCore extends Canvas implements Runnable  {
 			
 			//resets
 			inputs.UpdatePending();
+
+			//add any amount of inputs as needed
+			//animationInputs.add() can be called
+			animationInputs = inputs.pending;
+			for(int i = GameObject.Min; i <= GameObject.Max; i++) {
+				for (GameObject j : tempElements) {
+					animationInputs.addAll(j.animate);
+				}
+			}
+
 		}
 		
 		

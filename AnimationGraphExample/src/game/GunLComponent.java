@@ -4,12 +4,14 @@ import engine.GameObject;
 import engine.Component;
 
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 
 public class GunLComponent extends Component {
 
     private int shootDelay;
     private boolean shootEye;
     public Direction dir;
+
 
     public GunLComponent(GameObject _parent) {
         super(_parent);

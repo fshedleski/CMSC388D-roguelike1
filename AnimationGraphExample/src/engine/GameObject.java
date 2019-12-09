@@ -14,6 +14,8 @@ public class GameObject {
     public EngineCore corePtr;
     public AffineTransform af;
 
+    public ArrayList<Integer> animate = new ArrayList<>();
+
     public GameObject(EngineCore _core) {
         Gcomponents = new ArrayList<Component>();
         Lcomponents = new ArrayList<Component>();

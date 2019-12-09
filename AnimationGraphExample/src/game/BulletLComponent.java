@@ -1,14 +1,17 @@
 package game;
 
 import engine.Component;
+import engine.EngineCore;
 import engine.GameObject;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 public class BulletLComponent extends Component {
     public Direction dir;
     public int MAXX, MAXY;
     public final int SPEED = 8;
+
 
 
     public BulletLComponent(GameObject _parent, Direction _dir) {
@@ -34,6 +37,7 @@ public class BulletLComponent extends Component {
             case Up:
                 if(parent.af.getTranslateY() - SPEED < 0) {
                     parent.corePtr.elements.remove(parent);
+                    parent.animate.add(0);
                 } else {
                     parent.af.translate(0,-SPEED);
                 }
@@ -41,6 +45,7 @@ public class BulletLComponent extends Component {
             case Down:
                 if(parent.af.getTranslateY() + SPEED >= MAXY) {
                     parent.corePtr.elements.remove(parent);
+                    parent.animate.add(0);
                 } else {
                     parent.af.translate(0,SPEED);
                 }
@@ -48,6 +53,7 @@ public class BulletLComponent extends Component {
             case Left:
                 if(parent.af.getTranslateX() - SPEED < 0) {
                     parent.corePtr.elements.remove(parent);
+                    parent.animate.add(0);
                 } else {
                     parent.af.translate(-SPEED,0);
                 }
@@ -55,6 +61,7 @@ public class BulletLComponent extends Component {
             case Right:
                 if(parent.af.getTranslateX() + SPEED >= MAXX) {
                     parent.corePtr.elements.remove(parent);
+                    parent.animate.add(0);
                 } else {
                     parent.af.translate(SPEED,0);
                 }

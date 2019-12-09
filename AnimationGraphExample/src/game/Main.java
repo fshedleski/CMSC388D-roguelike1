@@ -82,7 +82,13 @@ public class Main {
         playerGComp.addDirEdge(3,2,83);
         //right to up
         playerGComp.addDirEdge(3,1,87);
-        playerGComp.whenNotMoving(true);
+
+        playerGComp.addDirEdge(4,0,0);
+        playerGComp.addDirEdge(2,0,0);
+        playerGComp.addDirEdge(3,0,0);
+        playerGComp.addDirEdge(1,0,0);
+
+        playerGComp.whenNotMoving(false);
         playerGComp.setTranslate(10.0D,42.0D);
         playerGComp.Priority = 2;
 
