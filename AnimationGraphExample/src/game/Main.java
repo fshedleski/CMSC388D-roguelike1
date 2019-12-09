@@ -83,10 +83,10 @@ public class Main {
         //right to up
         playerGComp.addDirEdge(3,1,87);
 
-        playerGComp.addDirEdge(4,0,0);
-        playerGComp.addDirEdge(2,0,0);
-        playerGComp.addDirEdge(3,0,0);
-        playerGComp.addDirEdge(1,0,0);
+        playerGComp.addDirEdge(4,0,256);
+        playerGComp.addDirEdge(2,0,256);
+        playerGComp.addDirEdge(3,0,256);
+        playerGComp.addDirEdge(1,0,256);
 
         playerGComp.whenNotMoving(false);
         playerGComp.setTranslate(10.0D,42.0D);
