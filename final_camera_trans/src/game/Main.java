@@ -2,6 +2,8 @@ package game;
 
 import engine.*;
 
+import java.awt.event.KeyEvent;
+
 // GROUP
 // Franklin Shedleski
 // Dennis Dao
@@ -26,8 +28,14 @@ public class Main {
 
         // make player body
         GameObject2D player = new GameObject2D(core, 400, 400);
-        //player.addLogicComponent(new engine.MoveComponent(player, 1880, 1040, 4));
-        //player.addLogicComponent(new RotateComponent(player, 18, 4, 0.25));
+        player.addLogicComponent(new engine.MoveComponent(player, 1880, 1040, 4,
+                new Keybind(KeyEvent.VK_W, "Player Move Up"),
+                new Keybind(KeyEvent.VK_S, "Player Move Down"),
+                new Keybind(KeyEvent.VK_A, "Player Move Left"),
+                new Keybind(KeyEvent.VK_D, "Player Move Right")));
+        player.addLogicComponent(new RotateComponent(player, 18, 4, 0.25,
+                new Keybind(KeyEvent.VK_Q, "Player Rotate CW"),
+                new Keybind(KeyEvent.VK_E, "Player Rotate CCW")));
         player.addGraphicsComponent(new PlayerBodyGComponent(player));
 
         // make head as a seperate object with player as parent

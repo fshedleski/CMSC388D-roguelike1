@@ -2,39 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bee7dd4-12c9-4361-b741-f52d19ecae5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/boiS.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/boiS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/empt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_camera_trans.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/AssetsCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/EngineCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/GameObject25D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/GameObject2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/HIDHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/MoveComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/ResourceNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/RotateComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Vector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/BackgroundGComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/PlayerBodyGComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/PlayerHeadGComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FinalProjectBase/src/engine/Vector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workshop10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workshop10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workshop10/out/production/workshop10/game/CubeLineComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workshop10/out/production/workshop10/game/CubeLineComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workshop10/src/game/CubeLineComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../workshop10/src/game/CubeLineComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workshop9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workshop9/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/Keybind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/KeybindMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/Camera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/EngineCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/EngineCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject25D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/HIDHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/HIDHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/RotateComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/RotateComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/EngineCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/EngineCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/GameObject25D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/GameObject2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/GameObject2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/HIDHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/HIDHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/MoveComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/MoveComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/RotateComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/RotateComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +108,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

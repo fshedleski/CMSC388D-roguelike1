@@ -58,4 +58,9 @@ public class HIDHandler implements KeyListener {
             pressed.remove((Integer)(e.getKeyCode()));
         }
     }
+
+    public void reset() {
+        pending.clear();
+        pressed.clear();
+    }
 }

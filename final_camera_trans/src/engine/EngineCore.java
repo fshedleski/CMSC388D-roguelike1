@@ -6,6 +6,7 @@ import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class EngineCore extends Canvas implements Runnable  {
 
@@ -15,7 +16,9 @@ public class EngineCore extends Canvas implements Runnable  {
 	public String Name;
 	public JFrame Frame;
 	public Boolean runing;
-	
+
+	public boolean isPaused;
+
 	private int SleepTime = 0;
 	
 	public ArrayList<GameObject2D> elements,tempElements;
@@ -32,10 +35,9 @@ public class EngineCore extends Canvas implements Runnable  {
 	public static AssetsCenter assetsCenter;
 	public static HIDHandler inputs;
 	public static Camera camera;
+	public static KeybindMenu kbmenu;
 
 	public EngineCore(int Size, double Ratio, int Scale, String Name, String path){
-		
-		
 		//initiation the variables
 		this.Height = Size;
 		this.Width = (int)(Size*Ratio);
@@ -44,6 +46,8 @@ public class EngineCore extends Canvas implements Runnable  {
 		
 		this.path = path;
 		this.Frame = new JFrame(Name);
+
+		this.isPaused = false;
 		
 		// Starting the data collection/storage systems
 		inputs =new HIDHandler(Frame);
@@ -69,6 +73,9 @@ public class EngineCore extends Canvas implements Runnable  {
 		this.Frame.setResizable(true);
 		this.Frame.setLocationRelativeTo(null);
 		this.Frame.setVisible(true);
+
+		// creating to keybind menu
+		kbmenu = new KeybindMenu(this);
 
 		// creating the camera
 		camera = new Camera(this, this.Width/2.0, this.Height/2.0);
@@ -133,11 +140,23 @@ public class EngineCore extends Canvas implements Runnable  {
 				LCount = 0;
 				FCount = 0;
 			}
-
-			updatePriorities();
 			
 			//resets
 			inputs.UpdatePending();
+
+			while(isPaused) {
+				now = System.nanoTime();
+				delta += (now - lasttime) / nsPL;
+				lasttime = now;
+
+				//Logic set to perform only 60 times per second
+				//Only calls logic on the key bind menu object
+				if(delta >= 1) {
+					LCount++;
+					kbmenu.logic(0);
+					delta -=1;
+				}
+			}
 		}
 		
 		
@@ -175,12 +194,6 @@ public class EngineCore extends Canvas implements Runnable  {
 		
 		G.dispose();
 		bs.show();
-	}
-
-	public void updatePriorities() {
-		for (GameObject2D j : tempElements) {
-			j.updatePriorities();
-		}
 	}
 	
 	public void AddObject(GameObject2D newObject) {

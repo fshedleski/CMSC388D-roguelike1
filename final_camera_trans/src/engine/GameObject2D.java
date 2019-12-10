@@ -12,15 +12,20 @@ public class GameObject2D {
     private ArrayList<Component> Gcomponents;
     private ArrayList<Component> Lcomponents;
     public EngineCore corePtr;
-    private AffineTransform af;
+    private AffineTransform af_trans;
+    private AffineTransform af_rotation;
+    private AffineTransform af_scale;
     public GameObject2D parent;
 
     public GameObject2D(EngineCore _core) {
         Gcomponents = new ArrayList<Component>();
         Lcomponents = new ArrayList<Component>();
-        af = new AffineTransform();
-        af.setToIdentity();
-        af.setToTranslation(0,0);
+        af_trans = new AffineTransform();
+        af_trans.setToIdentity();
+        af_rotation = new AffineTransform();
+        af_rotation.setToIdentity();
+        af_scale = new AffineTransform();
+        af_scale.setToIdentity();
         corePtr = _core;
         corePtr.AddObject(this);
         parent = null;
@@ -29,9 +34,12 @@ public class GameObject2D {
     public GameObject2D(EngineCore _core, GameObject2D _parent) {
         Gcomponents = new ArrayList<Component>();
         Lcomponents = new ArrayList<Component>();
-        af = new AffineTransform();
-        af.setToIdentity();
-        af.setToTranslation(0,0);
+        af_trans = new AffineTransform();
+        af_trans.setToIdentity();
+        af_rotation = new AffineTransform();
+        af_rotation.setToIdentity();
+        af_scale = new AffineTransform();
+        af_scale.setToIdentity();
         corePtr = _core;
         corePtr.AddObject(this);
         parent = _parent;
@@ -41,9 +49,12 @@ public class GameObject2D {
     public GameObject2D(EngineCore _core, double _x, double _y) {
         Gcomponents = new ArrayList<Component>();
         Lcomponents = new ArrayList<Component>();
-        af = new AffineTransform();
-        af.setToIdentity();
-        af.setToTranslation(_x, _y);
+        af_trans = new AffineTransform();
+        af_trans.setToTranslation(_x, _y);
+        af_rotation = new AffineTransform();
+        af_rotation.setToIdentity();
+        af_scale = new AffineTransform();
+        af_scale.setToIdentity();
         corePtr = _core;
         corePtr.AddObject(this);
         parent = null;
@@ -52,9 +63,12 @@ public class GameObject2D {
     public GameObject2D(EngineCore _core, GameObject2D _parent, double _x, double _y) {
         Gcomponents = new ArrayList<Component>();
         Lcomponents = new ArrayList<Component>();
-        af = new AffineTransform();
-        af.setToIdentity();
-        af.setToTranslation(_x, _y);
+        af_trans = new AffineTransform();
+        af_trans.setToTranslation(_x, _y);
+        af_rotation = new AffineTransform();
+        af_rotation.setToIdentity();
+        af_scale = new AffineTransform();
+        af_scale.setToIdentity();
         corePtr = _core;
         corePtr.AddObject(this);
         parent = _parent;
@@ -62,18 +76,31 @@ public class GameObject2D {
 
     public AffineTransform getConstAf() {
         if(parent == null) {
-            return this.af;
+            AffineTransform ret = new AffineTransform();
+            ret.setToIdentity();
+            ret.concatenate(af_trans);
+            ret.concatenate(af_rotation);
+            ret.concatenate(af_scale);
+            return ret;
         } else {
-            AffineTransform ret = new AffineTransform(parent.af);
-            ret.translate(this.af.getTranslateX(), this.af.getTranslateY());
+            AffineTransform ret = new AffineTransform(parent.getConstAf());
+            ret.concatenate(af_trans);
             return ret;
         }
     }
 
-    public AffineTransform getMutAf() {
-        return this.af;
+    public AffineTransform getMutAfTrans() {
+        return this.af_trans;
     }
-    public void setMutAf(AffineTransform _af) { this.af = _af; }
+    public void setMutAfTrans(AffineTransform _af) { this.af_trans = _af; }
+    public AffineTransform getMutAfRot() {
+        return this.af_rotation;
+    }
+    public void setMutAfRot(AffineTransform _af) { this.af_rotation = _af; }
+    public AffineTransform getMutAfScale() {
+        return this.af_scale;
+    }
+    public void setMutAfScale(AffineTransform _af) { this.af_scale = _af; }
 
     // add a component to logic and graphics
     // (its normally better to use add graphics and add logic functions)
@@ -213,17 +240,6 @@ public class GameObject2D {
         return ret;
     }
 
-    private int calcMaxComponentPriority() {
-        int tempMax = 0;
-        for(Component c : Lcomponents) {
-            tempMax = Math.max(tempMax, c.Priority);
-        }
-        for(Component c : Gcomponents) {
-            tempMax = Math.max(tempMax, c.Priority);
-        }
-        return tempMax;
-    }
-
     // logic update
     public void logic(int priority) {
         for (Component c : Lcomponents) {
@@ -241,24 +257,4 @@ public class GameObject2D {
             }
         }
     }
-
-    public void updatePriorities() {
-        for(Component c : Lcomponents) {
-            if(Max < c.Priority) {
-                Max = c.Priority;
-            }
-            if(Min > c.Priority) {
-                Min = c.Priority;
-            }
-        }
-        for(Component c : Gcomponents) {
-            if(Max < c.Priority) {
-                Max = c.Priority;
-            }
-            if(Min > c.Priority) {
-                Min = c.Priority;
-            }
-        }
-    }
-
 }
