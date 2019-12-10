@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bee7dd4-12c9-4361-b741-f52d19ecae5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/engine/Keybind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/KeybindMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bg.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/toggle.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/AudioComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/bgMusicLComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/toggleMusicLComp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/Camera.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/EngineCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/EngineCore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject25D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/HIDHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/HIDHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/META-INF/final_camera_trans.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/KeybindMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/KeybindMenu$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/RotateComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/RotateComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/EngineCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/EngineCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/GameObject25D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/GameObject2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/GameObject2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/HIDHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/HIDHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/MoveComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/MoveComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/RotateComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/RotateComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,18 +37,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575665857084" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/game" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Google_Drive\College\Fall_2019\CMSC_388D_git\final_camera_trans\assets" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="engine" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Google_Drive\College\Fall_2019\CMSC_388D_git\final_camera_trans\src\game" />
+      <recent name="D:\Google_Drive\College\Fall_2019\CMSC_388D_git\final_camera_trans\src\engine" />
       <recent name="C:\Users\Frank\Google_Drive\College\Fall_2019\CMSC_388D_git\final_camera_trans\assets" />
       <recent name="C:\Users\Frank\Google_Drive\College\Fall_2019\CMSC_388D_git\final_camera_trans\src\engine" />
       <recent name="C:\Users\Frank\Google_Drive\College\Fall_2019\CMSC_388D_git\final_camera_trans\src\game" />
-      <recent name="C:\Users\Frank\Google_Drive\College\Fall_2019\CMSC_388D_git\final_camera_trans\src" />
     </key>
   </component>
   <component name="RunDashboard">

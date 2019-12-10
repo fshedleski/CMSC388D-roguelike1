@@ -50,10 +50,10 @@ public class MoveComponent extends Component {
         kDown = _kDown;
         kLeft = _kLeft;
         kRight = _kRight;
-        EngineCore.kbmenu.addKeybind(_kUp);
-        EngineCore.kbmenu.addKeybind(_kDown);
-        EngineCore.kbmenu.addKeybind(_kLeft);
-        EngineCore.kbmenu.addKeybind(_kRight);
+        EngineCore.kbmenu.addKeybind(kUp);
+        EngineCore.kbmenu.addKeybind(kDown);
+        EngineCore.kbmenu.addKeybind(kLeft);
+        EngineCore.kbmenu.addKeybind(kRight);
     }
 
     @Override

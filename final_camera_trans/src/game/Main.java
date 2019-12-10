@@ -16,6 +16,8 @@ import java.awt.event.KeyEvent;
 
 public class Main {
     private static String assetsDirectory = "assets\\";
+    private static String bgmusicpath = "bg.wav";
+    private static String togglemusicpath = "toggle.wav";
 
     private static EngineCore core = new EngineCore(768, 1366.0/768, 1, "final", assetsDirectory);
 
@@ -42,6 +44,15 @@ public class Main {
         GameObject2D playerHead = new GameObject2D(core, player, -10, -40);
         playerHead.addGraphicsComponent(new PlayerHeadGComponent(playerHead));
 
+        // background music
+        GameObject2D bgmusic = new GameObject2D(core);
+        bgmusic.addLogicComponent(new AudioComponent(bgmusic, bgmusicpath));
+        bgmusic.addLogicComponent(new bgMusicLComp(bgmusic));
+
+        // toggle music radio
+        GameObject2D radio = new GameObject2D(core);
+        radio.addLogicComponent(new AudioComponent(radio, togglemusicpath));
+        radio.addLogicComponent(new toggleMusicLComp(radio));
 
         // run
         core.start();
