@@ -16,8 +16,8 @@ import java.awt.event.KeyEvent;
 
 public class Main {
     private static String assetsDirectory = "assets\\";
-    private static String bgmusicpath = "bg.wav";
-    private static String togglemusicpath = "toggle.wav";
+    private static String bgmusicpath = "1minutejam_bass.wav";
+    private static String togglemusicpath = "1minutejam_treble.wav";
 
     private static EngineCore core = new EngineCore(768, 1366.0/768, 1, "final", assetsDirectory);
 
@@ -52,7 +52,7 @@ public class Main {
         // toggle music radio
         GameObject2D radio = new GameObject2D(core);
         radio.addLogicComponent(new AudioComponent(radio, togglemusicpath));
-        radio.addLogicComponent(new toggleMusicLComp(radio));
+        radio.addLogicComponent(new toggleMuteMusicLComp(radio));
 
         // run
         core.start();

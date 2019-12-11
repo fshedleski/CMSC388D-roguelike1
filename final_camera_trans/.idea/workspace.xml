@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bee7dd4-12c9-4361-b741-f52d19ecae5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/toggle.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/AudioComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/bgMusicLComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/toggleMusicLComp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/META-INF/final_camera_trans.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/KeybindMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/KeybindMenu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/AudioComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/AudioComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/BackgroundGComp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/game/BackgroundGComp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/MoveComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/MoveComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/toggleMusicLComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/AudioComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/AudioComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/BackgroundGComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/BackgroundGComp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/toggleMusicLComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/toggleMuteMusicLComp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

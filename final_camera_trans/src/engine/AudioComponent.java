@@ -1,23 +1,18 @@
 package engine;
 
-//import javafx.scene.media.*;
-//import javafx.util.Duration;
 import java.awt.*;
 import javax.sound.sampled.*;
 import java.io.File;
 
 public class AudioComponent extends Component {
-    //Media media;
-    //MediaPlayer mplayer;
     int lastFrame;
     Clip clip;
     AudioInputStream audioInputStream;
+    FloatControl gainControl;
+    float range;
 
     public AudioComponent(GameObject2D _parent, String mp3FileName) {
         super(_parent);
-
-        //media = new Media(new File(EngineCore.assetsCenter.path + mp3FileName).toURI().toString());
-        //mplayer = new MediaPlayer(media);
 
         lastFrame = 0;
         try{
@@ -25,6 +20,8 @@ public class AudioComponent extends Component {
                     new File(EngineCore.assetsCenter.path + mp3FileName).toURI().toURL());
             clip = AudioSystem.getClip();
             clip.open(audioInputStream);
+            gainControl = (FloatControl)clip.getControl(FloatControl.Type.MASTER_GAIN);
+            range = (gainControl.getMaximum() - gainControl.getMinimum()) * 0.95f;
         } catch(Exception e) {
             System.out.println("Failed to create audioinputstream");
             e.printStackTrace();
@@ -37,14 +34,17 @@ public class AudioComponent extends Component {
         clip.start();
     }
 
+    public void loop() {
+        clip.setFramePosition(lastFrame);
+        clip.loop(Clip.LOOP_CONTINUOUSLY);
+    }
+
     public void pause() {
-        //mplayer.pause();
         lastFrame = clip.getFramePosition() + 3;
         clip.stop();
     }
 
     public void stop() {
-        //mplayer.stop();
         lastFrame = 0;
         clip.stop();
     }
@@ -54,29 +54,32 @@ public class AudioComponent extends Component {
         return clip.isRunning();
     }
 
-    public void seek(double secs) {
-        //if(secs > media.getDuration().toSeconds()) {
-        //    secs = media.getDuration().toSeconds();
-        //} else if(secs < 0) {
-        //    secs = 0;
-        //}
-        //mplayer.seek(new Duration(1000*secs));
-        clip.setMicrosecondPosition((long)(secs*1000));
+    public void seekMicroSec(long msecs) {
+        clip.setMicrosecondPosition(msecs);
+    }
+    public void seekFrame(int frame) {
+        clip.setFramePosition(frame);
+    }
+    public long getMicroSec() {
+        return clip.getMicrosecondPosition();
+    }
+    public long getFrame() {
+        return clip.getFramePosition();
     }
 
-    // takes int 0 - 100
-    //public void setVolume(double val) {
-        //if(val > 100) {
-        //    val = 100;
-        //} else if(val < 0) {
-        //    val = 0;
-        //}
-        //mplayer.setVolume(val/100.0);
-    //}
+    // takes value 0-1 and sets volume to that percent
+    public void setVolume(double v) {
+        float gain = (range * (float)v) + gainControl.getMinimum();
+        gainControl.setValue(gain);
+    }
 
-    //public MediaPlayer getMplayer() {
-    //    return mplayer;
-    //}
+    public void mute() {
+        setVolume(0);
+    }
+
+    public void unmute() {
+        setVolume(1);
+    }
 
     @Override
     public void logic() { }

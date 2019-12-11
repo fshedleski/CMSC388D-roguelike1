@@ -4,7 +4,6 @@ import engine.EngineCore;
 import engine.GameObject2D;
 
 import java.awt.*;
-import java.awt.geom.AffineTransform;
 
 public class BackgroundGComp extends engine.Component {
     private static String assetsBackGroundImg = "empt.png";
