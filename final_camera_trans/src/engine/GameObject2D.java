@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class GameObject2D {
     static int Min;
     static int Max;
+    double xcoord, ycoord;
 
     private ArrayList<Component> Gcomponents;
     private ArrayList<Component> Lcomponents;
@@ -58,6 +59,8 @@ public class GameObject2D {
         corePtr = _core;
         corePtr.AddObject(this);
         parent = null;
+        xcoord = _x;
+        ycoord = _y;
     }
 
     public GameObject2D(EngineCore _core, GameObject2D _parent, double _x, double _y) {

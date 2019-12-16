@@ -89,6 +89,7 @@ public class MoveComponent extends Component {
                     //parent.af.setToTranslation(parent.af.getTranslateX(), MAXY-1);
                 } else {
                     parent.getMutAfTrans().translate(0,-SPEED);
+                    parent.ycoord -= SPEED;
                 }
                 break;
             case Down:
@@ -96,6 +97,7 @@ public class MoveComponent extends Component {
                     //parent.af.setToTranslation(parent.af.getTranslateX(),0);
                 } else {
                     parent.getMutAfTrans().translate(0,SPEED);
+                    parent.ycoord += SPEED;
                 }
                 break;
             case Left:
@@ -103,6 +105,7 @@ public class MoveComponent extends Component {
                     //parent.af.setToTranslation(MAXX-1, parent.af.getTranslateY());
                 } else {
                     parent.getMutAfTrans().translate(-SPEED,0);
+                    parent.xcoord -= SPEED;
                 }
                 break;
             case Right:
@@ -110,6 +113,7 @@ public class MoveComponent extends Component {
                     //parent.af.setToTranslation(0, parent.af.getTranslateY());
                 } else {
                     parent.getMutAfTrans().translate(SPEED,0);
+                    parent.xcoord += SPEED;
                 }
                 break;
         }

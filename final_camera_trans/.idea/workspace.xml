@@ -2,26 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bee7dd4-12c9-4361-b741-f52d19ecae5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/engine/Keybind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/KeybindMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FinalProjectBase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FinalProjectBase/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/META-INF/final_camera_trans.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/Camera.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/EngineCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/EngineCore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject25D.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/HIDHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/HIDHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/RotateComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/RotateComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/KeybindMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/KeybindMenu$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/EngineCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/EngineCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/GameObject25D.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/GameObject2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/GameObject2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/HIDHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/HIDHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/MoveComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/MoveComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/RotateComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/RotateComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/META-INF (1)/roguelike2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/AssetsCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionHandlerComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/EngineCore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/GameObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/HIDHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/ResourceNotFound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BackgroundGComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunLComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +59,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575665857084" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CMSC388D-roguelike1-master/final_camera_trans" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -89,6 +104,9 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
