@@ -2,17 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bee7dd4-12c9-4361-b741-f52d19ecae5c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FinalProjectBase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FinalProjectBase/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/AudioComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/AudioComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/BackgroundGComp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/game/BackgroundGComp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/META-INF/final_camera_trans.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/Camera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/GameObject2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/engine/MoveComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/final_camera_trans/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_camera_trans/game/toggleMusicLComp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/AudioComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/AudioComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/BackgroundGComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/BackgroundGComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/EngineCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/EngineCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/GameObject2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/GameObject2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/MoveComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/MoveComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/RotateComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/RotateComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/toggleMusicLComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/toggleMuteMusicLComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/META-INF (1)/roguelike2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/AssetsCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/AssetsCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionHandlerComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/CollisionHandler$CollisionHandlerComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/CollisionHandler$CollisionPair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/CollisionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/Component.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/Component.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/EngineCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/EngineCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/GameObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/HIDHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/HIDHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/ResourceNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine/ResourceNotFound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BackgroundGComp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/BackgroundGComp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletGComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/BulletGComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/BulletLComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/BulletLComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/GunGComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/GunGComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunLComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/GunLComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/PlayerGComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/PlayerGComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/PlayerLComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game/PlayerLComponent.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +109,9 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />

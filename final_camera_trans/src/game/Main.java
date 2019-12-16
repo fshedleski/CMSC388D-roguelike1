@@ -52,7 +52,8 @@ public class Main {
         // toggle music radio
         GameObject2D radio = new GameObject2D(core);
         radio.addLogicComponent(new AudioComponent(radio, togglemusicpath));
-        radio.addLogicComponent(new toggleMuteMusicLComp(radio));
+        radio.addLogicComponent(new toggleMuteMusicLComp(radio,
+                new Keybind(KeyEvent.VK_M, "Toggle Music")));
 
         // run
         core.start();
