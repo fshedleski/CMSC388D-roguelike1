@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9f867ef-5dd0-427e-a361-8deedc4bd2eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/META-INF (1)/roguelike2.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/AssetsCenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionHandlerComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionPair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/Component.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/EngineCore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/GameObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/HIDHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/ResourceNotFound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BackgroundGComp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletGComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Direction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunLComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_camera_trans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../final_camera_trans/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +124,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
