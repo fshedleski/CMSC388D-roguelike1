@@ -48,8 +48,8 @@ public class RotateComponent extends Component {
         if(engine.EngineCore.LCount % 2 == 0) { // only update player every other frame
             if (engine.EngineCore.inputs.pending.contains(kCCW.bind)) {
                 parent.getMutAfRot().rotate(SPEED,
-                       xoffset,
-                       yoffset);
+                        xoffset,
+                        yoffset);
             }
             if (engine.EngineCore.inputs.pending.contains(kCW.bind)) {
                 parent.getMutAfRot().rotate(-SPEED,

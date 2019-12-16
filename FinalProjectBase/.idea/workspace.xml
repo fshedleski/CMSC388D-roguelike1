@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9f867ef-5dd0-427e-a361-8deedc4bd2eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../roguelike2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../roguelike2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/META-INF (1)/roguelike2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/AssetsCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionHandlerComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler$CollisionPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/CollisionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/EngineCore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/GameObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/HIDHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/engine (1)/ResourceNotFound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BackgroundGComp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/BulletLComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/GunLComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerGComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roguelike2/out/production/roguelike2/game (1)/PlayerLComponent.class" beforeDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,12 +65,6 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="325" />
-    <option name="y" value="-17" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
   <component name="ProjectId" id="1UibWX44NZkRjI1XWSET06dZcIX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -58,7 +75,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572631593726" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../final_camera_trans" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -80,6 +97,18 @@
       <recent name="C:\Users\Frank\Google_Drive\College\Fall_2019\CMSC_388D\roguelike2\src\Engine" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="game.Main" />
@@ -100,18 +129,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -124,6 +141,17 @@
       <updated>1571424389770</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>
